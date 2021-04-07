@@ -1,0 +1,137 @@
+ *{ 
+    border: 1px solid black;
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+background-color: #f9fafc;
+}
+
+.navbar {
+    padding: 15px 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    display: flex;
+
+}
+.navlist {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+a:visited {
+    color: #69696a;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 80px;
+    display: block;
+}
+
+.button1 { 
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 80px;
+    width: 90%;
+}
+
+
+.main {
+    border-left: #f9fafc;
+    color: #69696a;
+}
+
+h2{
+    color: #000;
+}
+
+.footer{
+    background: rgba(247, 193, 162, 0.7);
+    width:100%;
+    position:fixed;
+    bottom:0;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footlist{
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    border-radius: 50%;
+    opacity: .5;
+    position: absolute;
+    right:10px;
+    bottom:300px;
+}
+
+.circle1 {
+    background-color:rgba(247,136,167,0.6);
+    width: 200px;
+    height: 200px;
+    }
+    
+.circle2 {
+    background-color:rgba(247,193,162,0.7);
+    width: 150px;
+    height:150px;
+    bottom: 250px;
+    }
+.circle3 {
+    background-color: rgba(207,130,213,0.6);
+    width: 100px;
+    height:100px;
+    right: 100px;
+    bottom:275px;
+
+}
+
+@media screen and (min-width: 768px){
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+     .navlist {
+        width: auto;
+        flex-direction: row;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .circle{
+        display: none;
+    }
+    
+}
